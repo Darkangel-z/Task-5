@@ -4,7 +4,7 @@
 }
 body{
 	color: #000;
-	font: normal 14px Arial, Helvetica, sans-serif;
+	font-family: "Titillium Web", sans-serif;
 }
 img{	
 	border: 0;
@@ -13,15 +13,12 @@ ul li{
 	list-style: none;
 }
 input, textarea, select, button{
-	font: normal 14px Arial, Helvetica, sans-serif;
 	outline: none;	
 	border:none;
 }
-h1, h2, h3, h4, h5, h6{
-	font-weight: normal;
-}
-
-	
+h1{
+	font: 40px 'Titillium Web', sans-serif bold;
+}	
 /* Layout
 ----------------------------------*/	
 .wrapper{}
@@ -32,7 +29,7 @@ h1, h2, h3, h4, h5, h6{
 	width:100%;
 	color:#fff;
 }
-.mainF,.mainB,.mainLB,.mainW,.mainP{
+.mainF,.mainB,.mainLB,.mainW,.mainP,.mainDB,.mainPi{
 	background-color:#87509c;
 	width:1040px;
 	text-align:center;
@@ -71,25 +68,21 @@ h1, h2, h3, h4, h5, h6{
 	background-color: #643a79;
 	border-radius:4px;
 }
+.fiolet h2{
+	padding-bottom:35px;
+	font-size:40px;
+}
 .fiolet .containF{
 	padding-top:125px;
 	padding-left:55px;
 	padding-right:75px;
 	text-align:center;
-	font-size:42.16px;
+	font-size:41.16px;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: bold;
 }
-.fiolet span{
-	padding-left:60px;
-	padding-right:65px;
-}
-.fiolet p{
-	padding-bottom:35px;
-}
-.fiolet button, .peach button{
-	width:293px;
-	height:66px;
+.fiolet button, .peach button, .darkblue button{
+	padding:27px 80px;
 	color:#fff;
 	border-radius:2px;
 	background-color:#eb7d4b;
@@ -99,6 +92,9 @@ h1, h2, h3, h4, h5, h6{
 	font-size:18px;
 	margin-bottom:40px;
 }
+.fiolet button:hover{
+	background-color:#FF962D;
+}
 /*fiolet*/
 
 /*blue*/
@@ -107,37 +103,36 @@ h1, h2, h3, h4, h5, h6{
 	width:100%;
 	color:#fff;
 }
-.mainB, .mainLB, .mainW, mainP{
+.mainB, .mainLB, .mainW, mainP,.mainDB,.mainPi{
 	background-color:#17c2a4;
 	padding-top:105px;
 	padding-bottom:83px;
 	width:1100px;
 	overflow:hidden;
 }
-}
-.blue .headB,.lightblue .headLB,.white .headW, .peach .headP{
+ 
+h1{
 	font: 40px 'Titillium Web', sans-serif bold;
 	text-align: center;
 	padding: 5px;
-	float:left;
 	margin-bottom:15px;
 	overflow:hidden;
 }
-.blue headB:after, .lightblue .headLB:after, .white .headW:after, .peach .headP:after{
-	background-image:url("images/lines/line2.png");
-	padding-left:508px;
-	padding-bottom:15px;
+.line{
+	padding-top:5px;
+	background: url("images/line.png") no-repeat center center;
+	opacity:0.7;
 }
-.textB,.textLB,.textW,.textP{
+.textB,.textLB,.textW,.textP,textDB,.textPi{
 	font-family:'Titillium Web', sans-serif;
 	font-size:18.58px;
 	text-align:center;
 	padding-left:245px;
 	padding-right:245px;
-	margin-bottom:50px;
 }
-.containB,.containLB,.containW,.containP{
+.containB,.containLB,.containW,.containP,.containDB,.containPi{
 	overflow:hidden;
+	padding-top:20px;
 }
 .blocksB,.blocksLB,.blocksW{
 	padding-top:20px;
@@ -153,10 +148,10 @@ h1, h2, h3, h4, h5, h6{
 .blocksB:nth-child(5n),.blocksLB:nth-child(5n),.blocksW:nth-child(5n){
 	margin-right:0px;
 }
-.imgB,.imgW,.imgP{
+.imgB,.imgP{
 	padding-top:35px;
 }
-.nameB,.nameLB,.nameW,nameP{
+.nameB,.nameLB,.nameW,.nameP,namePi{
 	padding-top:40px;
 	font-family:'Titillium Web', sans-serif;
 	font-weight:bold;
@@ -167,7 +162,7 @@ h1, h2, h3, h4, h5, h6{
 	font-size:16px;
 	padding:25px 35px 35px 35px;
 }
-.blocksB a,.blocksLB a,.blocksW a,.blocksP a{
+.blocksB a,.blocksLB a,.blocksW a,.blocksP a,.blocksPi a{
 	text-decoration:none;	
 	color:#fff;
 }
@@ -224,13 +219,12 @@ h1, h2, h3, h4, h5, h6{
 .imgW{
 	max-width:115px;
 	min-height:100px;
-	padding-left:30px;
 	margin:0 auto;
-	padding-top:35px;
 	border:10px solid #dfe8ed;
 	border-radius:50%;	
 	text-align:center;
-	font: 40px 'Titillium Web', sans-serif bold;
+	font: 40px 'Titillium Web', sans-serif;
+	line-height:2.7;
 }
 /*white*/
 
@@ -247,6 +241,7 @@ h1, h2, h3, h4, h5, h6{
 .peach .panel{
 	overflow:hidden;
 	padding-left:360px;
+	padding-top:20px;
 }
 .peach .panel li{
 	padding-top:10px;
@@ -267,7 +262,7 @@ h1, h2, h3, h4, h5, h6{
 .peach .panel li:hover,.peach .panel li.active{
 	background-color: #fff;
 }
-.mainP .blocksP{
+.mainP .blocksP, blocksPi{
 	padding-top:20px;
 	max-width:540px;
 	max-height:425px;
@@ -275,7 +270,7 @@ h1, h2, h3, h4, h5, h6{
 	text-align:center;
 	margin:0 10px;
 }
-.imgP{
+.imgP .imgPi{
 	max-width:540px;
 	
 }
@@ -293,5 +288,104 @@ h1, h2, h3, h4, h5, h6{
 	background-color:#17c2a4;
 	box-shadow:0px 4px 0 0 #14a58c;
 }
-
+.peach button:hover{
+	background-color:#87FAFA;
+}
 /*peach*/
+
+/*pink*/
+.pink{
+	background-color:#d74680;
+	width:100%;
+	color:#fff;
+}
+.mainPi{
+	background-color:#d74680;
+}
+
+.blocksPi{
+	max-width:540px;
+	max-height:220px;
+	overflow:hidden;
+	float:left;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin:0 50px;
+}
+.blocksPi:nth-child(2),.blocksPi:nth-child(4){
+	margin-left:0px;
+}  
+.blocksPi:nth-child(3),.blocksPi:nth-child(5){
+	margin-right:0px;
+}
+.blocksPi:nth-child(4),.blocksPi:nth-child(5){
+	padding-top:100px;
+}
+.imgPi{
+	float:left;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	background-color:#787878;
+}
+.descriptionPi{
+	float:left;
+	max-width:340px;
+	
+}
+
+/*pink*/
+
+/*darkblue*/
+.darkblue{
+	background-color:#3c5499;
+	width:100%;
+	color:#fff;
+}
+.mainDB{
+	background-color:#3c5499;
+}
+.inputs{
+	margin-top:70px;
+	
+}
+.darkblue input{
+	width:390px;
+	height:55px;
+	background-color:#273a71;
+	border:none;
+	color:#fff;
+	padding-left:25px;
+	border-radius:5px;
+}
+.darkblue input:first-child{
+	margin-right:25px;
+}
+.darkblue input:hover, .darkblue textarea:hover{
+	box-shadow:0 0 2px 2px #fff inset;
+}
+.darkblue input:focus, .darkblue textarea:focus{
+	background-color:#003871;
+}
+.darkblue textarea{
+	resize:vertical;
+	margin-top:30px;
+	background-color:#273a71;
+	border:none;	
+	color:#fff;
+	width:835px;
+	height:185px;
+	border-radius:5px;
+	padding-left:25px;
+	padding-top:15px;
+}
+.darkblue button{
+	margin-top:50px;
+	background-color:#30bae7;
+	box-shadow:0px 4px 0 0 #299ec5;
+
+}
+.darkblue button:hover{
+	background-color:#40c8f4;
+}
+/*darkblue*/
