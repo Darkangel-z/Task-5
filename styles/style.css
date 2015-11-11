@@ -37,8 +37,8 @@ h1{
 	overflow:hidden;
 }
 .fiolet_block .header{
-	padding-bottom:140px;
-	overflow:hidden;
+	overflow:visible;
+	padding-bottom:145px;
 }
 .logo{
 	float:left;
@@ -48,7 +48,7 @@ h1{
 	margin-left:40px;
 }
 .fiolet_block .main-navigation{
-	overflow:hidden;
+	overflow:visible;
 	padding-top:5px;
 	padding-right:10px;
 }
@@ -58,18 +58,42 @@ h1{
 	min-width:77px;
 	margin-right:10px;
 	text-align:center;	
-	float:right;	
+	float:right;		
+	border-radius:4px;	
+	position:relative;
 }
-.fiolet_block .main-navigation a li{
+.fiolet_block .main-navigation li a{
 	text-decoration: none;
 	color: #fff;
-	font-size: 16px;	
-	float:right;	
+	font-size: 16px;
+	text-align:center;
 	font-family: 'Titillium Web', sans-serif;
-	border-radius:4px;
 }
 .fiolet_block .main-navigation li:hover, .main-navigation li.active{
 	background-color: #643a79;
+}
+.fiolet_block .main-navigation .sub-main-navigation{
+	position:absolute;
+	width:150px;
+	padding:0;
+	margin:0;
+	top:100%;
+	left:0px;
+	overflow:visible;
+	background-color:#611F61;
+	z-index:10;
+	border-radius:4px;	
+	display:none;
+}
+.fiolet_block .main-navigation .sub-main-navigation li{
+	float:left;
+	width:150px;
+}
+.fiolet_block .main-navigation .sub-main-navigation li a{
+	text-align:center;
+}
+.fiolet_block .main-navigation li:hover .sub-main-navigation{
+	display:block;
 }
 .fiolet_block h2{
 	padding-bottom:35px;
@@ -95,7 +119,7 @@ h1{
 	width:190px;
 	max-height:67px;
 	margin:auto;
-	margin-left:455px;
+	margin-left:380px;
 }
 .orange_button .button{
 	margin-top:10px;
@@ -195,9 +219,8 @@ h1{
     margin-bottom:80px;
 }
 .team_block .block{
-	max-height:560px;
+	min-height:500px;
 	max-width:260px;
-	
 }
 .team_block .img{	
 	max-width:200px;
@@ -211,13 +234,45 @@ h1{
 	height:200px;
 	border-radius:50%;
 }
-
 .team_block .info{
 	color:#44bee8;
 }
 .team_block .block a{
 	color:#3c4761;
 }
+.team_block .block .social-block{
+	overflow:hidden;
+	padding-left:45px;
+}
+.team_block .block .social-block .social{
+	float:left;
+	margin-left:10px;
+}
+.social-block .fb{
+ 	width:30px;
+	height:30px;
+	border-radius:50%;
+	background:#bdd1df url("images/team block/fb.png") no-repeat 50% 50%;
+}
+.team_block .social-block .mail{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background:#bdd1df url("images/team block/mail.png") no-repeat 50% 50%;
+}
+.team_block .social-block .tw{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background:#bdd1df url("images/team block/tw.png") no-repeat 50% 50%;
+}
+.team_block .social-block .in{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background:#bdd1df url("images/team block/in.png") no-repeat 50% 50%;
+}
+
 /*team_block*/
 
 /*skills_block*/
@@ -429,3 +484,39 @@ h1{
 	background-color:#40c8f4;
 }
 /*contact_block*/
+
+/*footer*/
+.footer{
+	background-color:#344b8e;
+	width:100%;
+}
+.footer .main{
+	background-color:#344b8e;
+	width:1100px;
+	text-align:center;
+	margin:auto;
+	overflow:hidden;
+	padding-bottom:0;
+	padding-top:0;
+}
+.footer .social{
+	overflow:hidden;
+	padding:20px;
+}
+.footer .social li{
+	padding:25px;
+	float:left;			
+	margin:auto;
+}
+.footer .social li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	text-align:center;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:bolder;
+}
+.footer .social a:hover,.footer .social li a.active{
+	color: #31a1d2;
+}
+/*footer*/
